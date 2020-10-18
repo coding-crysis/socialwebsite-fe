@@ -25,11 +25,7 @@
 
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
+  data () {},
   methods: {
     goHome () {
       this.$router.push({ name: 'home' })

@@ -74,7 +74,7 @@ export default {
     },
     searchUser () {
       if (this.search) {
-        this.items = this.items.filter(item => item.first_name.toLowerCase().includes(this.search.toLowerCase()) || item.last_name.toLowerCase().includes(this.search.toLowerCase()))
+        this.items = this.originalData.filter(item => item.first_name.toLowerCase().includes(this.search.toLowerCase()) || item.last_name.toLowerCase().includes(this.search.toLowerCase()))
       } else {
         this.items = this.originalData
       }
